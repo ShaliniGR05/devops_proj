@@ -23,7 +23,7 @@ function App() {
       <header className="topbar">
         <div className="container">
           <a className="logo" href="#home" aria-label="ShaliniGR home">
-            ShaliniGR
+            Shalini Ramesh
           </a>
           <nav aria-label="Primary navigation">
             <ul className="nav-list">
