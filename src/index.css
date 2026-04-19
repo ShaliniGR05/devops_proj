@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@500;700;800&display=swap');
+
+:root {
+  --bg: #f7f5ef;
+  --headline: #172a3a;
+  --body: #31485c;
+  --muted: #5a7387;
+  --panel: #fffef8;
+  --line: #d6ddd1;
+  --accent: #0d9488;
+  --accent-soft: #f59e0b;
+  --shadow-soft: 0 20px 45px -30px rgba(23, 42, 58, 0.45);
+  --display: 'Syne', 'Trebuchet MS', sans-serif;
+  --copy: 'Space Grotesk', 'Verdana', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--copy);
+  color: var(--body);
+  background:
+    radial-gradient(55rem 45rem at 100% 0%, rgba(13, 148, 136, 0.15), transparent 70%),
+    radial-gradient(45rem 38rem at 0% 100%, rgba(245, 158, 11, 0.12), transparent 72%),
+    var(--bg);
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
