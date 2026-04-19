@@ -13,17 +13,14 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm ci'
-            }
-        }
-
         stage('Build') {
             steps {
-                sh 'npm run build'
-            }
-        }
+                sh '''
+                npm ci
+                npm run build
+            '''
+    }
+}
 
         stage('Test') {
             steps {
