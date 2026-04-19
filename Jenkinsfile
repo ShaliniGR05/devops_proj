@@ -19,20 +19,28 @@ pipeline {
                 npm ci
                 npm run build
             '''
-    }
-}
+            }
+        }
 
         stage('Test') {
             steps {
                 sh '''
-                if [ ! -d dist ]; then
-                    echo "Build failed!"
+                set -e
+
+                echo "testing started..."
+
+                if [ ! -d dist ] || [ -z "$(ls -A dist)" ]; then
+                    echo "dist folder missing or empty"
                     exit 1
                 fi
-                '''
+
+                if [ ! -f dist/index.html ]; then
+                    echo "index.html missing"
+                    exit 1
+                fi
+        '''
             }
         }
-
         stage('Deploy') {
             steps {
                 sh '''
