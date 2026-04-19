@@ -28,7 +28,7 @@ function App() {
           <nav aria-label="Primary navigation">
             <ul className="nav-list">
               <li>
-                <a href="#about">About</a>
+                <a href="#about">About Shalini</a>
               </li>
               <li>
                 <a href="#projects">Projects</a>
