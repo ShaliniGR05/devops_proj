@@ -65,7 +65,7 @@ function App() {
               <ul>
                 <li>Practical full stack projects</li>
                 <li>Cloud foundations and deployment workflows</li>
-                <li>Security-aware development mindset</li>
+                <li>Security-aware development</li>
               </ul>
             </aside>
           </div>
